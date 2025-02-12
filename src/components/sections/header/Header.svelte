@@ -1,25 +1,43 @@
 <script lang="ts">
+	import { star } from "@components/Icons.svelte";
 	import Navbar from "./Navbar.svelte";
+    import avatar_01 from "$lib/assets/avatar_01.png";
+    import avatar_02 from "$lib/assets/avatar_02.png";
+    import avatar_03 from "$lib/assets/avatar_03.png";
 
+    let avatars = [avatar_01, avatar_02, avatar_03];
 </script>
 
 <header>
     <Navbar />
 
-    <section>
+    <section class="px-24 py-16 grid grid-cols-2">
         <section>
-            <h1>Present Remote Workers as the Best Assistants for Your Work.</h1>
-            <p>Find talented professionals from around the world who are ready to help your business grow without geographical boundaries.</p>
+            <div class="grid gap-5 mb-20">
+                <h1 class=" text-[3.25rem]/[130%] text-[#1F1F1F] font-medium tracking-tighter">Present <span class="text-[#5856C2]">Remote Workers</span> as the Best Assistants for Your Work.</h1>
+                <p class="text-base tracking-tight text-gray-600 pr-24">Find talented professionals from around the world who are ready to help your business grow without geographical boundaries.</p>
 
-            <div>
-                <button>Get Started</button>
-                <button>How it Works</button>
+                <div>
+                    <button class="rounded-md px-4 py-[10px] text-sm/[14px] font-semibold bg-[#5254D3] text-white">Get Started</button>
+                    <button class="text-sm/[14px] font-semibold border border-[#E9E9E9] rounded-md px-4 py-[10px]">How it Works</button>
+                </div>
             </div>
 
-            <div>
-                <div></div>
+            <div class="flex gap-3 items-center">
+                <div class="flex">
+                    {#each avatars as avatar, i}
+                        <div class={["overflow-hidden rounded-full border-2 border-white", i !== 0 && "-ml-3"]}><img src={avatar} alt="avatar_{i + 1}"></div>
+                    {/each}
+                </div>
+                
                 <div>
-                    
+                    <div class="flex gap-2 items-center">
+                        {#each { length: 5 } }
+                            <span>{@render star()}</span>
+                        {/each}
+                        <span class="text-sm/[14px] font-semibold text-secondary">(5.0)</span>
+                    </div>
+                    <p class="mt-1 text-sm/[14px] font-normal text-gray-400">from 5000 reviewers</p>
                 </div>
             </div>
         </section>
