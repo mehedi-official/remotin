@@ -5,7 +5,7 @@
 
 {#if children}
 	<div
-		class="inline-flex w-fit items-center gap-2 rounded-md border border-[#EEEDF0] px-2 py-[6px] text-sm/[14px] font-normal text-[#1F1F1F]"
+		class="inline-flex w-fit items-center gap-2 rounded-md border border-[#EEEDF0] px-2 py-1 text-sm/[14px] font-normal text-[#1F1F1F]"
 	>
 		{@render logo_icon()}
 		{@render children()}

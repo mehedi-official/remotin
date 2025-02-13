@@ -6,6 +6,7 @@
 	import Icp from '@components/sections/icp/Icp.svelte';
 	import Pricing from '@components/sections/pricing/Pricing.svelte';
 	import Solution from '@components/sections/solution/Solution.svelte';
+	import Testimonial from '@components/sections/testimonial/Testimonial.svelte';
 </script>
 
 <Header />
@@ -14,6 +15,7 @@
 	<Solution />
 	<Howitwork />
 	<Pricing />
+	<Testimonial />
 	<Faq />
 </main>
 <Footer />

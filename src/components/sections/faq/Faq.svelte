@@ -13,13 +13,13 @@
 		{
 			question: 'How do you vet remote workers?',
 			answer:
-				'Remotin is a platform that connects businesses with top-tier remote professionals from around the world. We specialize in providing pre-vetted talent for a wide range of industries and roles.',
+				'Vetting remote workers requires a multi-faceted approach, combining traditional screening methods with those tailored to the remote work environment.',
 			isActive: false
 		},
 		{
 			question: 'What types of roles can I hire for through Remotin?',
 			answer:
-				'Remotin is a platform that connects businesses with top-tier remote professionals from around the world. We specialize in providing pre-vetted talent for a wide range of industries and roles.',
+				'Remotin is a platform that specializes in connecting businesses with remote developers from Latin America. While their primary focus is on software development roles, they can likely help you find talent for a broader range of tech-related positions.',
 			isActive: false
 		}
 	]);
@@ -28,25 +28,25 @@
 		{
 			question: 'How quickly can I hire a remote worker?',
 			answer:
-				'Remotin is a platform that connects businesses with top-tier remote professionals from around the world. We specialize in providing pre-vetted talent for a wide range of industries and roles.',
+				'The speed at which you can hire a remote worker depends on several factors, but generally, it can be faster than hiring a traditional on-site employee. It takes roughly around 3-4 weeks.',
 			isActive: false
 		},
 		{
 			question: 'Can I hire on a part-time or project basis?',
 			answer:
-				'Remotin is a platform that connects businesses with top-tier remote professionals from around the world. We specialize in providing pre-vetted talent for a wide range of industries and roles.',
+				'Yes, absolutely! Hiring remote workers on a part-time or project basis is a very common and often advantageous practice.  It offers flexibility for both the employer and the employee.',
 			isActive: false
 		},
 		{
 			question: 'What if I am not satisfied with a remote worker?',
 			answer:
-				'Remotin is a platform that connects businesses with top-tier remote professionals from around the world. We specialize in providing pre-vetted talent for a wide range of industries and roles.',
+				`It's a reality that sometimes a remote working relationship doesn't work out as planned. Having a clear plan for addressing dissatisfaction with a remote worker is crucial.`,
 			isActive: false
 		},
 		{
 			question: 'Is there ongoing support for managing remote worker?',
 			answer:
-				'Remotin is a platform that connects businesses with top-tier remote professionals from around the world. We specialize in providing pre-vetted talent for a wide range of industries and roles.',
+				'Yes, absolutely! Ongoing support for managing remote workers is essential for their success and the overall productivity of your team. Here are some key areas where ongoing support is crucial',
 			isActive: false
 		}
 	]);
@@ -60,7 +60,7 @@
 	}
 </script>
 
-<section class="p-24">
+<section class="px-48 py-24">
 	<section class="flex flex-col items-center gap-4 text-center">
 		<Chip>Frequently Asked Question</Chip>
 		<h2 class="text-5xl font-medium tracking-tighter text-[#1F1F1F]">
@@ -80,9 +80,14 @@
 						question.isActive ? 'border-[#5953C3] bg-[#F8F9FF] ' : 'border-[#DDDDDD]'
 					]}
 				>
-					<button class="flex justify-between w-full" onclick={() => handleAccordian('group_1', idx)}>
+					<button
+						class="flex w-full justify-between"
+						onclick={() => handleAccordian('group_1', idx)}
+					>
 						<h3 class="text-base/4 font-medium text-[#1f1f1f]">{question.question}</h3>
-						<span class={[" transition duration-300", question.isActive && "rotate-180"]}>{@render arrow_down(question.isActive)}</span>
+						<span class={[' transition duration-300', question.isActive && 'rotate-180']}
+							>{@render arrow_down(question.isActive)}</span
+						>
 					</button>
 
 					{#if question.isActive}
@@ -102,9 +107,14 @@
 						question.isActive ? 'border-[#5953C3] bg-[#F8F9FF] ' : 'border-[#DDDDDD]'
 					]}
 				>
-					<button class="flex justify-between w-full" onclick={() => handleAccordian('group_2', idx)}>
+					<button
+						class="flex w-full justify-between"
+						onclick={() => handleAccordian('group_2', idx)}
+					>
 						<h3 class="text-base/4 font-medium text-[#1f1f1f]">{question.question}</h3>
-						<span class={[" transition duration-300", question.isActive && "rotate-180"]}>{@render arrow_down(question.isActive)}</span>
+						<span class={[' transition duration-300', question.isActive && 'rotate-180']}
+							>{@render arrow_down(question.isActive)}</span
+						>
 					</button>
 
 					{#if question.isActive}

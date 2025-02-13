@@ -70,7 +70,20 @@
 {/snippet}
 
 {#snippet arrow_down(isActive: boolean = false)}
-	<svg class={[isActive ? "stroke-[#5953C3]" : "stroke-[#1D2221]"]} width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M11.6209 5.2207L7.81753 9.02404C7.36836 9.4732 6.63336 9.4732 6.18419 9.02404L2.38086 5.2207" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-	</svg>	
+	<svg
+		class={[isActive ? 'stroke-[#5953C3]' : 'stroke-[#1D2221]']}
+		width="14"
+		height="14"
+		viewBox="0 0 14 14"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path
+			d="M11.6209 5.2207L7.81753 9.02404C7.36836 9.4732 6.63336 9.4732 6.18419 9.02404L2.38086 5.2207"
+			stroke-width="1.5"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</svg>
 {/snippet}
