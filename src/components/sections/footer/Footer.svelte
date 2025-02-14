@@ -4,8 +4,8 @@
 	let social_icons = $state([facebook, linkedin, instagram, twitter]);
 </script>
 
-<footer class="bg-[#020202] px-12 text-[#F0F0F0]">
-	<section class=" grid grid-cols-2 gap-6 py-[4.5rem]">
+<footer class="bg-[#020202] px-4 text-[#F0F0F0] lg:px-12">
+	<section class=" grid gap-6 py-[4.5rem] lg:grid-cols-2">
 		<div class="inline-grid gap-6">
 			<h3 class=" pr-12 text-[2.5rem]/[130%] font-medium tracking-tighter">
 				Budget Saving, high flexibility and effectiveness. Start getting them now.
@@ -16,7 +16,7 @@
 			>
 		</div>
 
-		<div class="flex justify-between">
+		<div class="mt-6 grid grid-cols-3 lg:mt-0 lg:flex lg:justify-between">
 			<div>
 				<h4 class="mb-6 text-base/4 font-medium tracking-tight">Navigation</h4>
 				<ul class=" grid gap-4 text-sm/[14px] font-light tracking-tight">
@@ -50,8 +50,8 @@
 			</div>
 		</div>
 	</section>
-	<section class=" flex items-center justify-between py-9">
-		<p class=" text-base/4 font-light tracking-tight">
+	<section class=" flex flex-col justify-between gap-8 py-9 lg:flex-row lg:items-center">
+		<p class="text-sm font-light tracking-tight lg:text-base/4">
 			©{new Date().getFullYear()} Remotin. All rights reserved. Developed by
 			<a
 				class=" font-medium text-white underline underline-offset-4"

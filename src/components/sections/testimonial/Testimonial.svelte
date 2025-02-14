@@ -1,21 +1,23 @@
 <script>
-	import testimonial_img from '$lib/assets/testimonial.png';
+	import testimonial_img from '$lib/assets/testimonial.png?enhanced';
 	import Chip from '@components/Chip.svelte';
 	import avatar_01 from '$lib/assets/avatar_01.png';
 </script>
 
 <section>
 	<section
-		class="mx-auto mb-10 grid max-w-[36rem] justify-center justify-items-center gap-4 text-center"
+		class="mb-10 grid max-w-[36rem] gap-4 px-4 lg:mx-auto lg:justify-center lg:justify-items-center lg:text-center"
 	>
 		<Chip>Testimonial</Chip>
-		<h2 class="text-5xl font-medium tracking-tighter text-[#1F1F1F]">What People Say About Us</h2>
-		<p class="px-12 text-base tracking-tight text-gray-600">
+		<h2 class="text-4xl font-medium tracking-tighter text-[#1F1F1F] lg:text-5xl">
+			What People Say About Us
+		</h2>
+		<p class="text-sm tracking-tight text-gray-600 lg:px-12 lg:text-base">
 			Their satisfaction is all thanks to our hard work. Check out their testimonials.
 		</p>
 	</section>
 
-	<section class="content px-48">
+	<section class="content px-4 lg:px-48">
 		<article class="first rounded-lg border-2 border-[#EAE9FB] p-1">
 			<div class="flex h-full flex-col justify-between gap-5 bg-[#FCFBFF] p-3">
 				<p class="text-base tracking-tight text-gray-600">
@@ -54,7 +56,7 @@
 		</article>
 
 		<article class="middle overflow-hidden rounded-lg">
-			<img class="h-full w-full" src={testimonial_img} alt="Testimonial of Orix Agency" />
+			<enhanced:img class="h-full w-full" src={testimonial_img} alt="Testimonial of Orix Agency" />
 		</article>
 
 		<article class="third rounded-lg border-2 border-[#EAE9FB] p-1">
@@ -101,11 +103,22 @@
 		display: grid;
 		gap: 1rem;
 		grid-template-areas:
-			'first middle second'
-			'third middle fourth';
-		grid-template-columns: 2fr 3fr 2fr;
+			'first'
+			'second'
+			'middle'
+			'third'
+			'fourth';
+		grid-template-columns: 1fr;
 	}
 
+	@media (min-width: 64rem) {
+		.content {
+			grid-template-areas:
+				'first middle second'
+				'third middle fourth';
+			grid-template-columns: 2fr 3fr 2fr;
+		}
+	}
 	.first {
 		grid-area: first;
 	}

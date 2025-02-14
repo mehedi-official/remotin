@@ -6,18 +6,18 @@
 
 <section>
 	<section
-		class="mx-auto mb-10 grid max-w-lg justify-center justify-items-center gap-4 text-center"
+		class="mb-10 mt-32 grid max-w-lg gap-4 px-4 lg:mx-auto lg:mt-0 lg:justify-center lg:justify-items-center lg:text-center"
 	>
 		<Chip>Pricing</Chip>
-		<h2 class="text-5xl font-medium tracking-tighter text-[#1F1F1F]">
+		<h2 class=" text-4xl font-medium tracking-tighter text-[#1F1F1F] lg:text-5xl">
 			Plans that fit your needs, pricing that's fair
 		</h2>
-		<p class="px-12 text-base tracking-tight text-gray-600">
+		<p class="text-sm tracking-tight text-gray-600 lg:px-12 lg:text-base">
 			Pay only for what you need, with transparent pricing and no hidden fees.
 		</p>
 	</section>
 
-	<section class="mb-32 flex justify-center gap-7">
+	<section class="mb-32 flex flex-col justify-center gap-7 px-4 lg:flex-row">
 		<PricingCard>
 			{#snippet category()}
 				<span class="inline-flex items-center gap-2">{@render star('#2A42CB')}Starter Plan</span>

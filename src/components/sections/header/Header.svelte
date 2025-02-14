@@ -12,14 +12,16 @@
 <header>
 	<Navbar />
 
-	<section class="grid grid-cols-2 gap-8 px-24 py-16">
+	<section class="grid gap-8 px-4 py-16 lg:grid-cols-2 lg:px-24">
 		<section class="flex flex-col justify-between">
 			<div class="mt-5 grid gap-5">
-				<h1 class=" text-[3.25rem]/[130%] font-medium tracking-tighter text-[#1F1F1F]">
-					Present <span class="text-[#5856C2]">Remote Workers</span> as the Best Assistants for Your
+				<h1
+					class=" text-4xl/[130%] font-medium tracking-tighter text-[#1F1F1F] lg:text-[3.25rem]/[130%]"
+				>
+					Present <span class="text-[#5254D3]">Remote Workers</span> as the Best Assistants for Your
 					Work.
 				</h1>
-				<p class="pr-24 text-base tracking-tight text-gray-600">
+				<p class="text-base tracking-tight text-gray-600 lg:pr-24">
 					Find talented professionals from around the world who are ready to help your business grow
 					without geographical boundaries.
 				</p>
@@ -36,7 +38,7 @@
 				</div>
 			</div>
 
-			<div class=" mb-5 flex items-center gap-3">
+			<div class=" mb-5 mt-8 flex items-center gap-3 lg:mt-0">
 				<div class="flex">
 					{#each avatars as avatar, i}
 						<div
@@ -62,7 +64,7 @@
 			</div>
 		</section>
 
-		<section class=" pl-20">
+		<section class=" lg:pl-20">
 			<div class="overflow-hidden rounded-2xl">
 				<enhanced:img src={hero_img} alt="Hero Banner" />
 			</div>

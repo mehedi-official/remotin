@@ -2,7 +2,7 @@
 	let { category, header, benefit } = $props();
 </script>
 
-<section class="#border-[#EAE9FB] min-w-96 rounded-lg border-2 p-1">
+<section class="#border-[#EAE9FB] rounded-lg border-2 p-1 lg:min-w-96">
 	<div class="grid gap-6 bg-[#F6F7FF] p-3">
 		<div class="inline-grid gap-4">
 			<div

@@ -59,18 +59,18 @@
 	}
 </script>
 
-<section class="px-48 py-24">
-	<section class="flex flex-col items-center gap-4 text-center">
+<section class="px-4 py-24 lg:px-48">
+	<section class="flex flex-col gap-4 lg:items-center lg:text-center">
 		<Chip>Frequently Asked Question</Chip>
-		<h2 class="text-5xl font-medium tracking-tighter text-[#1F1F1F]">
+		<h2 class="text-4xl font-medium tracking-tighter text-[#1F1F1F] lg:text-5xl">
 			Have Question? <br /> We're Here to Help
 		</h2>
-		<p class="text-base tracking-tight text-gray-600">
+		<p class="text-sm tracking-tight text-gray-600 lg:text-base">
 			Find answers to frequently asked questions about us.
 		</p>
 	</section>
 
-	<section class="mt-12 grid grid-cols-2 gap-5">
+	<section class="mt-12 grid gap-5 lg:grid-cols-2">
 		<div class="flex flex-col gap-4">
 			{#each questions_1 as question, idx}
 				<div
@@ -85,7 +85,11 @@
 						class="flex w-full justify-between"
 						onclick={() => handleAccordian('group_1', idx)}
 					>
-						<h3 class="text-base/4 font-medium text-[#1f1f1f]">{question.question}</h3>
+						<h3
+							class="text-left text-base/4 font-medium leading-snug text-[#1f1f1f] lg:leading-none"
+						>
+							{question.question}
+						</h3>
 						<span class={[' transition duration-300', question.isActive && 'rotate-180']}
 							>{@render arrow_down(question.isActive)}</span
 						>
@@ -114,7 +118,11 @@
 						class="flex w-full justify-between"
 						onclick={() => handleAccordian('group_2', idx)}
 					>
-						<h3 class="text-base/4 font-medium text-[#1f1f1f]">{question.question}</h3>
+						<h3
+							class="text-left text-base/4 font-medium leading-snug text-[#1f1f1f] lg:leading-none"
+						>
+							{question.question}
+						</h3>
 						<span class={[' transition duration-300', question.isActive && 'rotate-180']}
 							>{@render arrow_down(question.isActive)}</span
 						>

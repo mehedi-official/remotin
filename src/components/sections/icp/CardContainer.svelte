@@ -9,7 +9,7 @@
 	} from '@components/Icons.svelte';
 </script>
 
-<section class="grid grid-cols-3 gap-4">
+<section class="grid gap-4 lg:grid-cols-3">
 	<article class="rounded-lg border-2 border-[#EAE9FB] p-1">
 		<div class="grid gap-5 bg-[#FCFBFF] p-3">
 			<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAECFE]">
