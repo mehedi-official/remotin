@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Chip from '@components/Chip.svelte';
+	import { cost_saving, world_quality, flexible_hour } from '@components/Icons.svelte';
 </script>
 
 <section class="p-24">
@@ -18,8 +19,10 @@
 
 	<section class="content mt-12">
 		<article class="first rounded-lg border-2 border-[#EAE9FB] p-1">
-			<div class="flex h-full flex-col justify-between gap-5 bg-[#FCFBFF] p-3">
-				<div class="h-10 w-10 rounded-full bg-[#EAECFE]"></div>
+			<div class="flex h-full flex-col justify-between gap-12 bg-[#FCFBFF] p-3">
+				<div class="mt-9 flex justify-center">
+					{@render cost_saving()}
+				</div>
 
 				<div class="grid gap-3 text-center">
 					<h3 class="text-base/4 font-medium text-[#1f1f1f]">Cost Saving</h3>
@@ -33,7 +36,9 @@
 
 		<article class="second rounded-lg border-2 border-[#EAE9FB] p-1">
 			<div class="grid gap-5 bg-[#FCFBFF] p-3">
-				<div class="h-10 w-10 rounded-full bg-[#EAECFE]"></div>
+				<div class="mt-9 flex justify-center">
+					{@render world_quality()}
+				</div>
 
 				<div class="grid gap-3 text-center">
 					<h3 class="text-base/4 font-medium text-[#1f1f1f]">World-Class Quality</h3>
@@ -46,10 +51,12 @@
 		</article>
 
 		<article class="third rounded-lg border-2 border-[#EAE9FB] p-1">
-			<div class="grid gap-5 bg-[#FCFBFF] p-3">
-				<div class="h-10 w-10 rounded-full bg-[#EAECFE]"></div>
+			<div class="flex items-center gap-8 bg-[#FCFBFF] px-12 py-10">
+				<div class="flex justify-center">
+					{@render flexible_hour()}
+				</div>
 
-				<div class="grid gap-3 text-center">
+				<div class="grid gap-3">
 					<h3 class="text-base/4 font-medium text-[#1f1f1f]">Flexibal Hours</h3>
 					<p class="text-sm tracking-tight text-gray-600">
 						With our workforce, working hours are no longer a limitation. Remote workers can work
