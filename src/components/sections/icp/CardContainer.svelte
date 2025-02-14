@@ -1,10 +1,20 @@
 <script lang="ts">
+	import {
+		creative,
+		enterprise,
+		freelancer,
+		global,
+		home,
+		monitor
+	} from '@components/Icons.svelte';
 </script>
 
 <section class="grid grid-cols-3 gap-4">
 	<article class="rounded-lg border-2 border-[#EAE9FB] p-1">
 		<div class="grid gap-5 bg-[#FCFBFF] p-3">
-			<div class="h-10 w-10 rounded-full bg-[#EAECFE]"></div>
+			<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAECFE]">
+				{@render monitor()}
+			</div>
 
 			<div class="grid gap-3">
 				<h3 class="text-lg/5 font-medium text-[#212121]">IT Company</h3>
@@ -18,7 +28,9 @@
 
 	<article class="rounded-lg border-2 border-[#EAE9FB] p-1">
 		<div class="grid gap-5 bg-[#FCFBFF] p-3">
-			<div class="h-10 w-10 rounded-full bg-[#EAECFE]"></div>
+			<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAECFE]">
+				{@render home()}
+			</div>
 
 			<div class="grid gap-3">
 				<h3 class="text-lg/5 font-medium text-[#212121]">Startup</h3>
@@ -32,7 +44,9 @@
 
 	<article class="rounded-lg border-2 border-[#EAE9FB] p-1">
 		<div class="grid gap-5 bg-[#FCFBFF] p-3">
-			<div class="h-10 w-10 rounded-full bg-[#EAECFE]"></div>
+			<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAECFE]">
+				{@render enterprise()}
+			</div>
 
 			<div class="grid gap-3">
 				<h3 class="text-lg/5 font-medium text-[#212121]">Enterprise Teams</h3>
@@ -46,7 +60,9 @@
 
 	<article class="rounded-lg border-2 border-[#EAE9FB] p-1">
 		<div class="grid gap-5 bg-[#FCFBFF] p-3">
-			<div class="h-10 w-10 rounded-full bg-[#EAECFE]"></div>
+			<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAECFE]">
+				{@render freelancer()}
+			</div>
 
 			<div class="grid gap-3">
 				<h3 class="text-lg/5 font-medium text-[#212121]">Freelancers</h3>
@@ -60,7 +76,9 @@
 
 	<article class="rounded-lg border-2 border-[#EAE9FB] p-1">
 		<div class="grid gap-5 bg-[#FCFBFF] p-3">
-			<div class="h-10 w-10 rounded-full bg-[#EAECFE]"></div>
+			<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAECFE]">
+				{@render global()}
+			</div>
 
 			<div class="grid gap-3">
 				<h3 class="text-lg/5 font-medium text-[#212121]">Global Team</h3>
@@ -74,7 +92,9 @@
 
 	<article class="rounded-lg border-2 border-[#EAE9FB] p-1">
 		<div class="grid gap-5 bg-[#FCFBFF] p-3">
-			<div class="h-10 w-10 rounded-full bg-[#EAECFE]"></div>
+			<div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAECFE]">
+				{@render creative()}
+			</div>
 
 			<div class="grid gap-3">
 				<h3 class="text-lg/5 font-medium text-[#212121]">Creative Agencies</h3>

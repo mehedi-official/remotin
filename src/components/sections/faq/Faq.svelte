@@ -39,8 +39,7 @@
 		},
 		{
 			question: 'What if I am not satisfied with a remote worker?',
-			answer:
-				`It's a reality that sometimes a remote working relationship doesn't work out as planned. Having a clear plan for addressing dissatisfaction with a remote worker is crucial.`,
+			answer: `It's a reality that sometimes a remote working relationship doesn't work out as planned. Having a clear plan for addressing dissatisfaction with a remote worker is crucial.`,
 			isActive: false
 		},
 		{
@@ -77,7 +76,9 @@
 				<div
 					class={[
 						' rounded-xl border px-3 py-4 ',
-						question.isActive ? 'border-[#5953C3] bg-[#F8F9FF] ' : 'border-[#DDDDDD]'
+						question.isActive
+							? 'border-[#5953C3] bg-[#F8F9FF] '
+							: 'border-[#DDDDDD] hover:border-[#6b6b6b] '
 					]}
 				>
 					<button
@@ -104,7 +105,9 @@
 				<div
 					class={[
 						' rounded-xl border px-3 py-4 ',
-						question.isActive ? 'border-[#5953C3] bg-[#F8F9FF] ' : 'border-[#DDDDDD]'
+						question.isActive
+							? 'border-[#5953C3] bg-[#F8F9FF] '
+							: 'border-[#DDDDDD] hover:border-[#6b6b6b]'
 					]}
 				>
 					<button

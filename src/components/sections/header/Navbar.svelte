@@ -26,10 +26,11 @@
 
 	<div>
 		<button
-			class="rounded-md border border-[#E9E9E9] px-3 py-[10px] text-sm/[14px] font-semibold text-[#1F1F1F]"
+			class="rounded-md border border-[#E9E9E9] px-3 py-[10px] text-sm/[14px] font-semibold text-[#1F1F1F] hover:bg-slate-50"
 			>Learn More</button
 		>
-		<button class="rounded-md bg-[#5254D3] px-3 py-[10px] text-sm/[14px] font-semibold text-white"
+		<button
+			class="rounded-md bg-[#5254D3] px-3 py-[10px] text-sm/[14px] font-semibold text-white hover:bg-[#373ac7]"
 			>Get Started</button
 		>
 	</div>

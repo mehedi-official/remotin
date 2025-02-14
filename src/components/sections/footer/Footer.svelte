@@ -11,7 +11,7 @@
 				Budget Saving, high flexibility and effectiveness. Start getting them now.
 			</h3>
 			<button
-				class="inline-flex w-fit rounded-md bg-white px-4 py-[10px] text-sm/[14px] font-semibold text-[#020202]"
+				class="inline-flex w-fit rounded-md bg-white px-4 py-[10px] text-sm/[14px] font-semibold text-[#020202] hover:bg-white/90"
 				>Get Started</button
 			>
 		</div>
@@ -61,7 +61,7 @@
 		</p>
 		<div class="flex items-center gap-4">
 			{#each social_icons as social}
-				<div>{@render social()}</div>
+				<div class="hover:cursor-pointer">{@render social()}</div>
 			{/each}
 		</div>
 	</section>

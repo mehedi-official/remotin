@@ -18,7 +18,7 @@
 			<div class="grid gap-3">{@render benefit()}</div>
 
 			<button
-				class=" w-full rounded border border-[#EAEAEA] bg-white py-3 text-base/4 font-medium tracking-tight text-[#1F1F1F] hover:bg-[#F1F1F1]"
+				class=" w-full rounded border border-[#EAEAEA] bg-white py-3 text-base/4 font-medium tracking-tight text-[#1F1F1F] transition duration-300 hover:bg-[#2741D8] hover:text-white"
 				>Select Plan</button
 			>
 		</div>
