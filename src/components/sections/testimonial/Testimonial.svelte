@@ -4,9 +4,9 @@
 	import avatar_01 from '$lib/assets/avatar_01.png';
 </script>
 
-<section>
+<section class="pt-24">
 	<section
-		class="mb-10 grid max-w-[36rem] gap-4 px-4 lg:mx-auto lg:justify-center lg:justify-items-center lg:text-center"
+		class="mb-10 grid max-w-[36rem] gap-4 px-4 lg:mx-auto lg:justify-center lg:justify-items-center lg:text-center 2xl:max-w-2xl"
 	>
 		<Chip>Testimonial</Chip>
 		<h2 class="text-4xl font-medium tracking-tighter text-[#1F1F1F] lg:text-5xl">

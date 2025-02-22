@@ -3,7 +3,7 @@
 	import { cost_saving, world_quality, flexible_hour } from '@components/Icons.svelte';
 </script>
 
-<section class=" px-4 lg:p-24">
+<section class=" px-4 lg:p-24 2xl:px-48">
 	<section class="flex flex-col items-end justify-between gap-8 lg:flex-row lg:gap-16">
 		<div class="inline-grid gap-4">
 			<Chip>How We Help You</Chip>

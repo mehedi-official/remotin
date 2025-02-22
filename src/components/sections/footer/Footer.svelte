@@ -4,9 +4,9 @@
 	let social_icons = $state([facebook, linkedin, instagram, twitter]);
 </script>
 
-<footer class="bg-[#020202] px-4 text-[#F0F0F0] lg:px-12">
+<footer class="bg-[#020202] px-4 text-[#F0F0F0] lg:px-12 2xl:px-24">
 	<section class=" grid gap-6 py-[4.5rem] lg:grid-cols-2">
-		<div class="inline-grid gap-6">
+		<div class="flex flex-col gap-6">
 			<h3 class=" pr-12 text-[2.5rem]/[130%] font-medium tracking-tighter">
 				Budget Saving, high flexibility and effectiveness. Start getting them now.
 			</h3>

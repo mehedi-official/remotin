@@ -3,7 +3,7 @@
 	import { consultation, monitoring, onboarding } from '@components/Icons.svelte';
 </script>
 
-<section class="px-4 py-8 lg:p-24">
+<section class="px-4 py-8 lg:p-24 2xl:px-48">
 	<section
 		class="mb-10 mt-24 grid max-w-lg gap-4 lg:mx-auto lg:mt-0 lg:justify-center lg:justify-items-center lg:text-center"
 	>

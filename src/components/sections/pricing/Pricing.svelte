@@ -6,7 +6,7 @@
 
 <section>
 	<section
-		class="mb-10 mt-32 grid max-w-lg gap-4 px-4 lg:mx-auto lg:mt-0 lg:justify-center lg:justify-items-center lg:text-center"
+		class="mb-10 mt-32 grid max-w-lg gap-4 px-4 lg:mx-auto lg:mt-24 lg:justify-center lg:justify-items-center lg:text-center 2xl:max-w-2xl"
 	>
 		<Chip>Pricing</Chip>
 		<h2 class=" text-4xl font-medium tracking-tighter text-[#1F1F1F] lg:text-5xl">

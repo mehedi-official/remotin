@@ -2,7 +2,7 @@
 	import CardContainer from './CardContainer.svelte';
 </script>
 
-<section class="px-4 py-28 lg:px-24">
+<section class="px-4 py-28 lg:px-24 2xl:px-48">
 	<div class="mb-10 grid justify-center gap-4 lg:text-center">
 		<h2 class=" text-4xl font-medium tracking-tighter text-[#1F1F1F] lg:text-5xl">
 			Who this service is for

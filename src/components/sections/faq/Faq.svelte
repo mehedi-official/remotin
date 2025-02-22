@@ -59,7 +59,7 @@
 	}
 </script>
 
-<section class="px-4 py-24 lg:px-48">
+<section class="px-4 py-24 lg:px-48 2xl:py-40">
 	<section class="flex flex-col gap-4 lg:items-center lg:text-center">
 		<Chip>Frequently Asked Question</Chip>
 		<h2 class="text-4xl font-medium tracking-tighter text-[#1F1F1F] lg:text-5xl">

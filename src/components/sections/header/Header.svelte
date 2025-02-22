@@ -16,23 +16,23 @@
 		<section class="flex flex-col justify-between">
 			<div class="mt-5 grid gap-5">
 				<h1
-					class=" text-4xl/[130%] font-medium tracking-tighter text-[#1F1F1F] lg:text-[3.25rem]/[130%]"
+					class=" text-4xl/[130%] font-medium tracking-tighter text-[#1F1F1F] lg:text-[3.25rem]/[130%] 2xl:text-7xl/[130%]"
 				>
 					Present <span class="text-[#5254D3]">Remote Workers</span> as the Best Assistants for Your
 					Work.
 				</h1>
-				<p class="text-base tracking-tight text-gray-600 lg:pr-24">
+				<p class="text-base tracking-tight text-gray-600 lg:pr-24 2xl:text-lg">
 					Find talented professionals from around the world who are ready to help your business grow
 					without geographical boundaries.
 				</p>
 
 				<div>
 					<button
-						class="rounded-md bg-[#5254D3] px-4 py-[10px] text-sm/[14px] font-semibold text-white hover:bg-[#373ac7]"
+						class="rounded-md bg-[#5254D3] px-4 py-[10px] text-sm/[14px] font-semibold text-white hover:bg-[#373ac7] 2xl:px-5 2xl:py-3 2xl:text-base/4"
 						>Get Started</button
 					>
 					<button
-						class="rounded-md border border-[#E9E9E9] px-4 py-[10px] text-sm/[14px] font-semibold hover:bg-slate-50"
+						class="rounded-md border border-[#E9E9E9] px-4 py-[10px] text-sm/[14px] font-semibold hover:bg-slate-50 2xl:px-5 2xl:py-3 2xl:text-base/4"
 						>How it Works</button
 					>
 				</div>
